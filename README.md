@@ -1,2 +1,20 @@
-# sql-security-filters
-SQL queries for filtering login attempts and employee data using WHERE, AND, OR, NOT, and LIKE.
+# 🔍 SQL Filtering Queries  
+
+## 📌 Description  
+This project demonstrates how SQL queries can be used to filter specific information from datasets such as login attempts and employee details.  
+
+## 🗂️ Tables Used  
+- **`log_in_attempts`** – stores login activity  
+- **`employees`** – stores employee details  
+
+## ⚙️ SQL Concepts Covered  
+- `WHERE` clause  
+- `AND`, `OR`, `NOT` operators  
+- `LIKE` with `%` wildcard  
+
+## 📂 Supporting Files  
+You can view the full documentation and supporting files here:  
+👉 [Supporting Files Link](#)  
+
+## 🎯 Purpose  
+To practice SQL filtering and learn how to extract targeted information from datasets.  
