@@ -10,7 +10,7 @@ A potential security incident was detected after business hours (post-18:00). Al
 
 The SQL query below demonstrates how I filtered failed login attempts that occurred outside business hours.
 
-![Screenshot of the command line with the SQL query for this task and its output](https://github.com/dondex001/SQL-security-filters/blob/main/retreve1.png)
+![Screenshot of the command line with the SQL query for this task and its output](https://github.com/dondex001/SQL-security-filters/blob/main/screenshots/retreve1.png)
 
 
 The screenshot below shows my query (first part) and a portion of its output (second part). This query filters for **failed login attempts** that occurred after **18:00**.
@@ -27,7 +27,7 @@ A suspicious event occurred on **2022-05-09**. Any login activity that happened 
 
 The query below illustrates how I applied SQL filtering with a `WHERE` condition to retrieve login attempts from specific dates.
 
-![Screenshot of the command line with the SQL query for this task and its output](https://github.com/dondex001/SQL-security-filters/blob/main/specific2.png)
+![Screenshot of the command line with the SQL query for this task and its output](https://github.com/dondex001/SQL-security-filters/blob/main/screenshots/specific2.png)
 
 The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred on **2022-05-09** or **2022-05-08**. First, I started by selecting all data from the `log_in_attempts` table. Then, I used a `WHERE` clause with an `OR` operator to filter my results to output only login attempts that occurred on either **2022-05-09** or **2022-05-08**. The first condition is `login_date = '2022-05-09'`, which filters for logins on **2022-05-09**. The second condition is `login_date = '2022-05-08'`, which filters for logins on **2022-05-08**.
 
@@ -37,7 +37,7 @@ After investigating the organization’s data on login attempts, I identified a 
 
 The following code demonstrates how I created a SQL query to filter for login attempts that occurred outside of **Mexico** using the condition `country <> 'Mexico'`.
 
-![Screenshot of the command line with the SQL query for this task and its output](https://github.com/dondex001/SQL-security-filters/blob/main/attempts3.png)
+![Screenshot of the command line with the SQL query for this task and its output](https://github.com/dondex001/SQL-security-filters/blob/main/screenshots/attempts3.png)
 
 The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred in countries other than **Mexico**. First, I started by selecting all data from the `log_in_attempts` table. Then, I used a `WHERE` clause with `NOT` to filter for countries other than Mexico. I applied `LIKE 'MEX%'` as the pattern to match because the dataset represents Mexico as both **MEX** and **MEXICO**. The percentage sign (`%`) represents any number of unspecified characters when used with `LIKE`.
 
@@ -47,7 +47,10 @@ My team needs to update the computers for specific employees in the **Marketing*
 
 The following code demonstrates how I created a SQL query to filter for employee machines belonging to employees in the **Marketing** department located in the **East** building. I used a `WHERE` clause with the conditions `department = 'Marketing'` and `building = 'East'`.
 
-![Screenshot of the command line with the SQL query for this task and its output](https://github.com/dondex001/SQL-security-filters/blob/main/employees4.png)
+![Screenshot of the command line with the SQL query for this task and its output](screenshots/employees4.png)
+
+![Screenshot of the command line with the SQL query for this task and its output](screenshots/attempts3.png)
+
   
 The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Marketing department in the East building. First, I started by selecting all data from the `employees` table. Then, I used a `WHERE` clause with `AND` to filter for employees who work in the Marketing department and in the East building. I used `LIKE 'East%'` as the pattern to match because the data in the `office` column represents the East building with the specific office number. The first condition is `department = 'Marketing'`, which filters for employees in the Marketing department. The second condition is `office LIKE 'East%'`, which filters for employees in the East building.
 
@@ -57,7 +60,7 @@ The machines for employees in the **Finance** and **Sales** departments also nee
 
 The following code demonstrates how I created a SQL query to filter for employee machines belonging to employees in the **Finance** or **Sales** departments. I used a `WHERE` clause with the `OR` operator to include results from both departments.
 
-![Screenshot of the command line with the SQL query for this task and its output](https://github.com/dondex001/SQL-security-filters/blob/main/finance5.png)
+![Screenshot of the command line with the SQL query for this task and its output](screenshots/finance5.png)
 
 The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the **Finance** and **Sales** departments. First, I started by selecting all data from the `employees` table. Then, I used a `WHERE` clause with `OR` to filter for employees who are in the Finance and Sales departments. I used the `OR` operator instead of `AND` because I want all employees who are in either department. The first condition is `department = 'Finance'`, which filters for employees from the Finance department. The second condition is `department = 'Sales'`, which filters for employees from the Sales department.
 
@@ -67,7 +70,7 @@ My team needs to make one more security update for employees who are not in the 
 
 The following demonstrates how I created a SQL query to filter for employee machines from employees not in the  Information Technology department.
 
-![Screenshot of the command line with the SQL query for this task and its output](https://github.com/dondex001/SQL-security-filters/blob/main/it6.png)
+![Screenshot of the command line with the SQL query for this task and its output](screenshots/it6.png)
 
 The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees not in the **Information Technology** department. First, I started by selecting all data from the `employees` table. Then, I used a `WHERE` clause with `NOT` to filter for employees not in this department.
 
