@@ -10,7 +10,11 @@ This project demonstrates how SQL queries can be used to filter specific informa
 ## ⚙️ SQL Concepts Covered  
 - `WHERE` clause  
 - `AND`, `OR`, `NOT` operators  
-- `LIKE` with `%` wildcard  
+- `LIKE` with `%` wildcard
+  
+## Screenshots
+
+You can view all project screenshots [screenshots](https://github.com/dondex001/SQL-security-filters/tree/main/screenshots).
 
 ## 📂 Supporting Files  
 You can view the full documentation and supporting files here:  
