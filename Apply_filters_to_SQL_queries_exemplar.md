@@ -49,9 +49,6 @@ The following code demonstrates how I created a SQL query to filter for employee
 
 ![Screenshot of the command line with the SQL query for this task and its output](screenshots/employees4.png)
 
-![Screenshot of the command line with the SQL query for this task and its output](screenshots/attempts3.png)
-
-  
 The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Marketing department in the East building. First, I started by selecting all data from the `employees` table. Then, I used a `WHERE` clause with `AND` to filter for employees who work in the Marketing department and in the East building. I used `LIKE 'East%'` as the pattern to match because the data in the `office` column represents the East building with the specific office number. The first condition is `department = 'Marketing'`, which filters for employees in the Marketing department. The second condition is `office LIKE 'East%'`, which filters for employees in the East building.
 
 ## Retrieve employees in Finance or Sales
